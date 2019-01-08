@@ -166,7 +166,7 @@
   var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
   function unwrapExports (x) {
-  	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
+  	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x.default : x;
   }
 
   function createCommonjsModule(fn, module) {
@@ -1231,7 +1231,7 @@
 
   var staticPrefixData = {
     plugins: [calc_1, crossFade_1, cursor_1, filter_1, flex_1, flexboxIE_1, flexboxOld_1, gradient_1, imageSet_1, position_1, sizing_1, transition_1],
-    prefixMap: { "transform": wms, "transformOrigin": wms, "transformOriginX": wms, "transformOriginY": wms, "backfaceVisibility": w, "perspective": w, "perspectiveOrigin": w, "transformStyle": w, "transformOriginZ": w, "animation": w, "animationDelay": w, "animationDirection": w, "animationFillMode": w, "animationDuration": w, "animationIterationCount": w, "animationName": w, "animationPlayState": w, "animationTimingFunction": w, "appearance": wm, "userSelect": wmms, "fontKerning": w, "textEmphasisPosition": w, "textEmphasis": w, "textEmphasisStyle": w, "textEmphasisColor": w, "boxDecorationBreak": w, "clipPath": w, "maskImage": w, "maskMode": w, "maskRepeat": w, "maskPosition": w, "maskClip": w, "maskOrigin": w, "maskSize": w, "maskComposite": w, "mask": w, "maskBorderSource": w, "maskBorderMode": w, "maskBorderSlice": w, "maskBorderWidth": w, "maskBorderOutset": w, "maskBorderRepeat": w, "maskBorder": w, "maskType": w, "textDecorationStyle": wm, "textDecorationSkip": wm, "textDecorationLine": wm, "textDecorationColor": wm, "filter": w, "fontFeatureSettings": wm, "breakAfter": wmms, "breakBefore": wmms, "breakInside": wmms, "columnCount": wm, "columnFill": wm, "columnGap": wm, "columnRule": wm, "columnRuleColor": wm, "columnRuleStyle": wm, "columnRuleWidth": wm, "columns": wm, "columnSpan": wm, "columnWidth": wm, "writingMode": wms, "flex": wms, "flexBasis": w, "flexDirection": wms, "flexGrow": w, "flexFlow": wms, "flexShrink": w, "flexWrap": wms, "alignContent": w, "alignItems": w, "alignSelf": w, "justifyContent": w, "order": w, "transitionDelay": w, "transitionDuration": w, "transitionProperty": w, "transitionTimingFunction": w, "backdropFilter": w, "scrollSnapType": wms, "scrollSnapPointsX": wms, "scrollSnapPointsY": wms, "scrollSnapDestination": wms, "scrollSnapCoordinate": wms, "shapeImageThreshold": w, "shapeImageMargin": w, "shapeImageOutside": w, "hyphens": wmms, "flowInto": wms, "flowFrom": wms, "regionFragment": wms, "textOrientation": w, "boxSizing": m, "textAlignLast": m, "tabSize": m, "wrapFlow": ms, "wrapThrough": ms, "wrapMargin": ms, "touchAction": ms, "gridTemplateColumns": ms, "gridTemplateRows": ms, "gridTemplateAreas": ms, "gridTemplate": ms, "gridAutoColumns": ms, "gridAutoRows": ms, "gridAutoFlow": ms, "grid": ms, "gridRowStart": ms, "gridColumnStart": ms, "gridRowEnd": ms, "gridRow": ms, "gridColumn": ms, "gridColumnEnd": ms, "gridColumnGap": ms, "gridRowGap": ms, "gridArea": ms, "gridGap": ms, "textSizeAdjust": wms, "borderImage": w, "borderImageOutset": w, "borderImageRepeat": w, "borderImageSlice": w, "borderImageSource": w, "borderImageWidth": w }
+    prefixMap: { "transform": wms, "transformOrigin": wms, "transformOriginX": wms, "transformOriginY": wms, "backfaceVisibility": w, "perspective": w, "perspectiveOrigin": w, "transformStyle": w, "transformOriginZ": w, "animation": w, "animationDelay": w, "animationDirection": w, "animationFillMode": w, "animationDuration": w, "animationIterationCount": w, "animationName": w, "animationPlayState": w, "animationTimingFunction": w, "appearance": wm, "userSelect": wmms, "fontKerning": w, "textEmphasisPosition": w, "textEmphasis": w, "textEmphasisStyle": w, "textEmphasisColor": w, "boxDecorationBreak": w, "clipPath": w, "maskImage": w, "maskMode": w, "maskRepeat": w, "maskPosition": w, "maskClip": w, "maskOrigin": w, "maskSize": w, "maskComposite": w, "mask": w, "maskBorderSource": w, "maskBorderMode": w, "maskBorderSlice": w, "maskBorderWidth": w, "maskBorderOutset": w, "maskBorderRepeat": w, "maskBorder": w, "maskType": w, "textDecorationStyle": wm, "textDecorationSkip": wm, "textDecorationLine": wm, "textDecorationColor": wm, "filter": w, "fontFeatureSettings": wm, "breakAfter": wmms, "breakBefore": wmms, "breakInside": wmms, "columnCount": wm, "columnFill": wm, "columnGap": wm, "columnRule": wm, "columnRuleColor": wm, "columnRuleStyle": wm, "columnRuleWidth": wm, "columns": wm, "columnSpan": wm, "columnWidth": wm, "writingMode": wms, "flex": wms, "flexBasis": w, "flexDirection": wms, "flexGrow": w, "flexFlow": wms, "flexShrink": w, "flexWrap": wms, "alignContent": w, "alignItems": w, "alignSelf": w, "justifyContent": w, "order": w, "transitionDelay": w, "transitionDuration": w, "transitionProperty": w, "transitionTimingFunction": w, "backdropFilter": w, "scrollSnapType": wms, "scrollSnapPointsX": wms, "scrollSnapPointsY": wms, "scrollSnapDestination": wms, "scrollSnapCoordinate": wms, "shapeImageThreshold": w, "shapeImageMargin": w, "shapeImageOutside": w, "hyphens": wmms, "flowInto": wms, "flowFrom": wms, "regionFragment": wms, "textOrientation": w, "boxSizing": m, "textAlignLast": m, "tabSize": m, "wrapFlow": ms, "wrapThrough": ms, "wrapMargin": ms, "touchAction": ms, "gridTemplateColumns": ms, "gridTemplateRows": ms, "gridTemplateAreas": ms, "gridTemplate": ms, "gridAutoColumns": ms, "gridAutoRows": ms, "gridAutoFlow": ms, "grid": ms, "gridRowStart": ms, "gridColumnStart": ms, "gridRowEnd": ms, "gridRow": ms, "gridColumn": ms, "gridColumnEnd": ms, "gridColumnGap": ms, "gridRowGap": ms, "gridArea": ms, "gridGap": ms, "textSizeAdjust": ["ms", "Webkit"], "borderImage": w, "borderImageOutset": w, "borderImageRepeat": w, "borderImageSlice": w, "borderImageSource": w, "borderImageWidth": w }
   };
 
   function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
@@ -1596,6 +1596,14 @@
   // `document.querySelector("style[data-aphrodite"])`, but holding onto it is
   // faster.
   var styleTag /* : ?HTMLStyleElement */ = null;
+  var styleTagSuffix = '';
+  var styleTagAttribute = function styleTagAttribute() {
+      return 'data-aphrodite' + (styleTagSuffix ? '-' + styleTagSuffix : '');
+  };
+
+  var setStyleTagSuffix = function setStyleTagSuffix(suffix) {
+      styleTagSuffix = suffix;
+  };
 
   // Inject a set of rules into a <style> tag in the head of the document. This
   // will automatically create a style tag and then continue to use it for
@@ -1605,7 +1613,7 @@
   var injectStyleTag = function injectStyleTag(cssRules /* : string[] */) {
       if (styleTag == null) {
           // Try to find a style tag with the `data-aphrodite` attribute first.
-          styleTag = document.querySelector("style[data-aphrodite]") /* : any */;
+          styleTag = document.querySelector('style[' + String(styleTagAttribute()) + ']') /* : any */;
 
           // If that doesn't work, generate a new style tag.
           if (styleTag == null) {
@@ -1615,7 +1623,7 @@
               styleTag = document.createElement('style');
 
               styleTag.type = 'text/css';
-              styleTag.setAttribute("data-aphrodite", "");
+              styleTag.setAttribute('' + String(styleTagAttribute()), "");
               head.appendChild(styleTag);
           }
       }
@@ -1788,6 +1796,7 @@
       alreadyInjected = {};
       isBuffering = false;
       styleTag = null;
+      styleTagSuffix = '';
   };
 
   var startBuffering = function startBuffering() {
@@ -2052,7 +2061,8 @@
 
           flushToStyleTag: flushToStyleTag,
           injectAndGetClassName: injectAndGetClassName,
-          defaultSelectorHandlers: defaultSelectorHandlers
+          defaultSelectorHandlers: defaultSelectorHandlers,
+          setStyleTagSuffix: setStyleTagSuffix
       };
   }
 
@@ -2067,7 +2077,8 @@
       minify = Aphrodite.minify,
       flushToStyleTag$1 = Aphrodite.flushToStyleTag,
       injectAndGetClassName$1 = Aphrodite.injectAndGetClassName,
-      defaultSelectorHandlers$1 = Aphrodite.defaultSelectorHandlers;
+      defaultSelectorHandlers$1 = Aphrodite.defaultSelectorHandlers,
+      setStyleTagSuffix$1 = Aphrodite.setStyleTagSuffix;
 
   exports.StyleSheet = StyleSheet$1;
   exports.StyleSheetServer = StyleSheetServer$1;
@@ -2077,6 +2088,7 @@
   exports.flushToStyleTag = flushToStyleTag$1;
   exports.injectAndGetClassName = injectAndGetClassName$1;
   exports.defaultSelectorHandlers = defaultSelectorHandlers$1;
+  exports.setStyleTagSuffix = setStyleTagSuffix$1;
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
